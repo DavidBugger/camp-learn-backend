@@ -1,0 +1,43 @@
+# Django
+*.pyc
+__pycache__/
+*.pyo
+db.sqlite3
+db.sqlite3-journal
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Media & Static (collected)
+/media/
+/staticfiles/
+
+# Coverage
+htmlcov/
+.coverage
+.coverage.*
+
+# Distribution
+*.egg-info/
+dist/
+build/
+
+camplearn_pitch_deck.pptx
+camplearn_schema_and_sync_architecture.docx
+idp_learning_platform_backend_spec.docx
