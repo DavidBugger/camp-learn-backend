@@ -13,7 +13,7 @@ class CourseAdmin(admin.ModelAdmin):
     list_display = ['title', 'category', 'created_at', 'updated_at']
     search_fields = ['title', 'description']
     list_filter = ['category']
-    # inlines = [LessonInline]
+    inlines = [LessonInline]
 
 
 @admin.register(Lesson)

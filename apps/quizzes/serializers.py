@@ -77,7 +77,7 @@ class QuizResultSerializer(serializers.ModelSerializer):
         model = QuizSubmission
         fields = [
             'id', 'quiz', 'quiz_title', 'score', 'total',
-            'percentage', 'submitted_at',
+            'percentage', 'answers', 'submitted_at',
         ]
 
     def get_percentage(self, obj):

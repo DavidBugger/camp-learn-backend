@@ -87,6 +87,17 @@ class QuizResultView(generics.RetrieveAPIView):
     serializer_class = QuizResultSerializer
     permission_classes = [permissions.IsAuthenticated]
 
+    def retrieve(self, request, *args, **kwargs):
+        try:
+            instance = self.get_object()
+        except QuizSubmission.DoesNotExist:
+            return Response(
+                {"detail": "No previous submission found for this quiz."},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        serializer = self.get_serializer(instance)
+        return Response(serializer.data)
+
     def get_object(self):
         return QuizSubmission.objects.filter(
             quiz_id=self.kwargs['quiz_id'],
