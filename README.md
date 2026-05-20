@@ -2,7 +2,7 @@
 
 CampLearn is an offline-first digital learning platform designed to provide high-quality education to children and youth in IDP (Internally Displaced Persons) camps and underserved communities. This repository contains the Django-based backend API.
 
-## 🚀 Features
+## Features
 
 - **RBAC (Role-Based Access Control):** Granular permissions for Students, Facilitators, Camp Admins, and System Admins.
 - **Learning Content Management:** Comprehensive management of Courses and Lessons (Video, Audio, Text).
@@ -13,7 +13,7 @@ CampLearn is an offline-first digital learning platform designed to provide high
 - **Impact Analytics:** Advanced reporting on camp performance and learner engagement metrics.
 - **Auto-Generated Docs:** Interactive API documentation via Swagger/OpenAPI.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Framework:** [Django 4.2 LTS](https://www.djangoproject.com/)
 - **API Engine:** [Django REST Framework (DRF)](https://www.django-rest-framework.org/)
@@ -22,13 +22,13 @@ CampLearn is an offline-first digital learning platform designed to provide high
 - **Environment Management:** [Python Decouple](https://github.com/HBNetwork/python-decouple)
 - **Database:** PostgreSQL (Production recommended), SQLite (Development default)
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.9+
 - pip
 - virtualenv
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 1. **Clone the repository:**
    ```bash
@@ -64,7 +64,7 @@ CampLearn is an offline-first digital learning platform designed to provide high
    python manage.py createsuperuser
    ```
 
-## 🏃 Running the Application
+## Running the Application
 
 Start the development server:
 ```bash
@@ -78,7 +78,7 @@ The API will be available at `http://127.0.0.1:8000/`.
 - **Swagger UI:** [http://127.0.0.1:8000/api/docs/](http://127.0.0.1:8000/api/docs/)
 - **Django Admin:** [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
 
-## 🧪 Testing
+## Testing
 
 The project includes an end-to-end integration test suite. Run tests using:
 ```bash
@@ -102,6 +102,6 @@ CAMPLEARN/
 └── utils/            # Shared helper functions
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
